@@ -92,6 +92,7 @@ class Linkedlist:
         # run in O(1)    
         return self.last
 
+print("HELLO! WELCOME TO LINKED LIST")
 myList = Linkedlist()
 myList.printList()
 print("Size: ", myList.countList())
