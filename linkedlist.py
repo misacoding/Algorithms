@@ -28,7 +28,7 @@ class Linkedlist:
         newNode = Node(d)
         if  self.last is None:
             self.head = newNode
-            self.head = newNode
+            self.last = newNode
         else:            
             self.last.setNext(newNode)
             self.last = newNode
