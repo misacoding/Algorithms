@@ -23,6 +23,16 @@ class Linkedlist:
         self.head = newNode
         if self.last is None:
             self.last = self.head
+
+    def insertLast(self, d):
+        newNode = Node(d)
+        if  self.last is None:
+            self.head = newNode
+            self.head = newNode
+        else:            
+            self.last.setNext(newNode)
+            self.last = newNode
+
         
     def printList(self):
         p = self.head
@@ -104,6 +114,18 @@ myList.insertFirst(3)
 myList.insertFirst(4)
 myList.insertFirst(1000)
 
+myList.printList()
+print("Size: ", myList.countList())
+
+myList.insertLast(14)
+myList.printList()
+print("Size: ", myList.countList())
+
+myList.insertLast(7)
+myList.printList()
+print("Size: ", myList.countList())
+
+myList.insertLast(20)
 myList.printList()
 print("Size: ", myList.countList())
 
